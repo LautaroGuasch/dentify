@@ -56,7 +56,7 @@ router.post('/users/signup', async (req,res) =>{
         //const newUser = new User({nombre, apellido, numeroAfiliado, email, telefono, fechaCumpleanios, password, rol, obraSocial, matricula, calle, numeroCalle, piso, departamento, localidad});
         const newUser = new User({nombre, apellido, dni, email, telefono, password, rol, esOdontologo});
         if (rol == "Soy Odontólogo"){
-            newUser.esOdontologo = true;
+            newUser.esOdontologo = true;        
         }
         else{
             newUser.esOdontologo = false;
