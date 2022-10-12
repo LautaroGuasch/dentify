@@ -40,6 +40,8 @@
                             </table>
                         </div>
 
+                        
+
                         <div class="form-group mt-3">
                             <label class="form-label fw-bold" for="fechaVencimiento">Seleccione una fecha de vencimiento:</label>
                             <input type="date" id="datepiker" class="form-control" name="fechaVencimiento">
@@ -49,6 +51,31 @@
                             <label class="form-label fw-bold" for="observaciones" style="margin-top: 3%;">Ingrese una Observacion:</label>
                             <textarea id="observaciones" name="observaciones" class="form-control"placeholder="Observaciones..." ></textarea>
                         </div>
+
+
+                        <div class="input-group" style="margin-top: 25px; margin-bottom: 25px">
+                            {{!-- <span class="input-group-text">Agregar presupuesto</span> --}}
+
+                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamiento</button>
+                                    <ul class="dropdown-menu">
+                                        {{!-- Aca se consume lo del json --}}
+                                        <li><a class="dropdown-item" href="#">Tratamiento 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Tratamiento 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Tratamiento 3</a></li>
+                                    </ul>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+
+                            <input type="date" id="datepiker" class="form-control" name="fecha" placeholder="Fecha de vencimiento">
+                           {{!-- Esto tambien se tiene que consumir --}}
+                            <input type="number" aria-label="Last name" class="form-control" placeholder="Importe"> 
+                            <input type="text" aria-label="Last name" class="form-control" placeholder="Descripcion">
+
+                            <button type="button" class="btn style-button" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+                                +
+                            </button>
+                        </div>
+
+
                         <div class="form-group" style="float: right;">
                             <button class="btn btn-primary btn-block" type="submit" style="margin-top: 3%;">
                                 Guardar
