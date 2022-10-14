@@ -6,11 +6,13 @@
                     <table class="table table-striped table-light table-hover mt-5" id="label">
                         <thead>
                             <tr>
-                                <th>Tratamiento</th>
+                                <th>Presupuesto</th>
+                                <th>Tratamientos</th>
                                 <th>Fecha</th>
                                 <th>Importe</th>
                                 <th>Cara del Diente</th>
                                 <th>Descripcion</th>
+                                <th>Estado</th>
                                 <!--{{#if esOdontologo}}
                                 <th></th>
                                 {{/if}}-->
@@ -19,12 +21,14 @@
                         <tbody>
                             {{#each treatments}}
                             <tr>
-                                
+                                <td>{{presupuesto}}</td>
                                 <td>{{nombre}}</td>
                                 <td>{{importe}}</td>
                                 <td>{{fecha}}</td>
                                 <td>{{caraDiente}}</td>
                                 <td>{{observaciones}}</td>
+                                {{!-- esto va a ser por each budget --}}
+                                <td>Pendiente</td>
                                 
                                 <!--{{#if ../esOdontologo}}
                                 <td>
